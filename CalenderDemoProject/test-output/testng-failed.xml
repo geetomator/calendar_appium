@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Testing Calender app ]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listners.TestNGListeners"/>
+  </listeners>
+  <test thread-count="5" name="Testing Calender app to Create a recurring meeting using Native Android Calender(failed)">
+    <parameter name="email1" value="geetanjaliahlawat2@gmail.com"/>
+    <classes>
+      <class name="tests.CalenderTest">
+        <methods>
+          <include name="mondayStandUp" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="fridayMeeting" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CalenderTest -->
+    </classes>
+  </test> <!-- Testing Calender app to Create a recurring meeting using Native Android Calender(failed) -->
+</suite> <!-- Failed suite [Testing Calender app ] -->
